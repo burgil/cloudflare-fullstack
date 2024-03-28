@@ -7,5 +7,13 @@
 </head>
 <body>
     <h1>Hey There!</h1>
+    <button onclick="test()">test</button>
+    <script>
+        async function test() {
+            const theList = await fetch('/get_list');
+            const json_theList = await theList.json();
+            console.log(json_theList);
+        }
+    </script>
 </body>
 </html>
