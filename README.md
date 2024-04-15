@@ -30,7 +30,7 @@ http://127.0.0.1:8787/helloworld
 
 This URL is working thanks to the `helloworld.js` file available on the `functions` folder.
 
-This is basically a workers.
+This is basically a worker.
 
 Where the `pages` folder is basically your static files, where the `index.html` is the root file for the web server:
 
