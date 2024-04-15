@@ -32,7 +32,7 @@ This URL is working thanks to the `helloworld.js` file available on the `functio
 
 This is basically a worker.
 
-Where the `pages` folder is basically your static files, where the `index.html` is the root file for the web server:
+The `pages` folder is basically your static files, where the `index.html` is the root file for the web server:
 
 http://127.0.0.1:8787/helloworld
 
