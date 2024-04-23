@@ -1,0 +1,1 @@
+module.exports = {}; // Wipes itself in the cloud - specific to regions - runs serverless in 275+ locations at the same time

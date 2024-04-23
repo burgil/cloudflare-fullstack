@@ -1,0 +1,5 @@
+name="aix-serverless"
+pages_build_output_dir="pages"
+kv_namespaces = [
+  { binding = "DB", id = "TEST" },
+]

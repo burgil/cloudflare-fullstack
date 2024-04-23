@@ -3,16 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <meta http-equiv="Content-Security-Policy" content="
+    default-src 'none'; 
+    script-src 'self'; 
+    connect-src 'self'; 
+    img-src 'self'; 
+    style-src 'self';
+    font-src 'self';
+    manifest-src 'self';
+    "> -->
+    <title>AiX - RoboticEVA</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <h1>Hey There!</h1>
     <button onclick="test()">test</button>
+    <button onclick="test2()">test2</button>
     <script>
         async function test() {
-            const theList = await fetch('/get_list');
+            const theList = await fetch('/example/get_list');
             const json_theList = await theList.json();
-            console.log(json_theList);
+            alert(JSON.stringify(json_theList));
+        }
+    </script>
+    <script src="/js/post.js"></script>
+    <script>
+        async function test2() {
+            const postExample = await postData('/read_post_body', {
+                hello_there: 42,
+                example: ["test", "test"],
+                obj: {
+                    hello: "world"
+                }
+            });
+            alert(JSON.stringify(postExample));
         }
     </script>
 </body>
